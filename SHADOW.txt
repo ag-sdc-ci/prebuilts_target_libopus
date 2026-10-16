@@ -1,0 +1,6 @@
+shadow prebuilt repo: libopus (target)
+  upstream: external/libopus
+  api-level: 32 (branch 32-20261016)
+  blobs: org.blisslabs.ag.libopus-1.apex org.blisslabs.ag.libopus.dev-1.apex org.blisslabs.ag.libopus.doc-1.apex 
+  dev-src: extracted dev payload + regenerated root Android.bp (gen_extractive_bp.py)
+  date: 2026-10-16
