@@ -33,8 +33,8 @@ cc_library_headers {
         "com.android.btservices",
     ],
     export_include_dirs: [
-        "dev-src/include",
-        "dev-src/include/opus",
+        "include",
+        "include/opus",
     ],
 }
 
@@ -46,8 +46,8 @@ cc_prebuilt_library {
     host_supported: true,
     check_elf_files: false,
     export_include_dirs: [
-        "dev-src/include",
-        "dev-src/include/opus",
+        "include",
+        "include/opus",
     ],
     prefer: true,
     apex_available: [
@@ -58,9 +58,9 @@ cc_prebuilt_library {
     ],
     min_sdk_version: "29",
     shared: {
-        srcs: ["src/lib/libopus.so"],
+        srcs: ["lib64/libopus.so"],
     },
     static: {
-        srcs: ["dev-src/lib/libopus.a"],
+        srcs: ["lib64/libopus.a"],
     },
 }
